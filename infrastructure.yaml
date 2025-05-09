@@ -77,8 +77,8 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-0fe4bd75332a821e8  # <- Cập nhật AMI hợp lệ theo region
-      KeyName: my-terraform-key       # <- Thay bằng key pair bạn đã tạo trên AWS
+      ImageId: ami-0fe4bd75332a821e8  
+      KeyName: my-terraform-key       
       SubnetId: !Ref PublicSubnet
       SecurityGroupIds:
         - !Ref PublicInstanceSecurityGroup
